@@ -8,5 +8,6 @@ namespace MScriptManager
 {
     class Const{
         public const int TYPE_TEXT = 0;
+        public const int TYPE_CHANGE_BGI = 1;
     }
 }

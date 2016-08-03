@@ -20,18 +20,35 @@ namespace MScriptManager
         {
             foreach (var data in raw)
             {
-                ScriptData SData = new ScriptData()
+                ScriptData SData = new ScriptData();
                 if (!data.Contains("[") && !data.Contains("]"))
                 {
-                    SData.TypeNum = Const.TYPE_TEXT;   
-                }  else
+                    SData.TypeNum = Const.TYPE_TEXT;
+                    SData.Line = data;
+                }
+                else
                 {
                     string tmp = data.Replace("[", "");
                     tmp = tmp.Replace("]", "");
                     string[] command = tmp.Split(' ');
-                }
-             
 
+                    SData.Line = string.Empty;
+
+                    switch (command[0])
+                    { //[commandName opt1 opt2 opt3 ... ]
+                        case "ChangeBGI":
+                            SData.TypeNum = Const.TYPE_CHANGE_BGI;
+                            break;
+                            // 他のOption
+                    }
+
+                    for (int i = 2;i < command.Length; i++)
+                    {
+                        SData.AddOption(command[i]);
+                    }           
+                }
+
+                Datas.Add(SData);
 
             }
         }
