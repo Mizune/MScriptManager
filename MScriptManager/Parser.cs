@@ -40,6 +40,7 @@ namespace MScriptManager
                             SData.TypeNum = Const.TYPE_CHANGE_BGI;
                             break;
                             // 他のOption
+                            // TODO add more option
                     }
 
                     for (int i = 2;i < command.Length; i++)

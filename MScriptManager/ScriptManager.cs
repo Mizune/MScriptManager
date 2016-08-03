@@ -13,11 +13,27 @@ namespace MScriptManager
         private Reader reader;
 
         public ScriptManager()
-        {                                           
+        {
+            Initialize();
+        }
+
+        public void Initialize()
+        {
             reader = new Reader();
             parser = new Parser();
+            datas = new List<ScriptData>();
+        }
+
+        public void Start()
+        {
             reader.DataRead();
-            parser.
+            parser.Parse(reader.GetData());
+            SetScinarios(parser.GetDatas());
+        }
+
+        public void SetScinarios(List<ScriptData> Datas)
+        {
+            this.datas = parser.GetDatas();
         }
 
     }
