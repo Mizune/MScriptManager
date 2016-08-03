@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MScriptManager
 {
-    class TEXT_TYPE{
-        public const int TEXT = 0;
+    class Const{
+        public const int TYPE_TEXT = 0;
     }
 }

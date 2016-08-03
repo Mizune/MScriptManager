@@ -12,5 +12,11 @@ namespace MScriptManager
         private Parser parser;
         private Reader reader;
 
+        public ScriptManager()
+        {                                           
+            reader = new Reader();
+            parser = new Parser();
+        }
+
     }
 }
