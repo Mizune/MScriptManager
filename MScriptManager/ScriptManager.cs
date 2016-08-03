@@ -8,7 +8,7 @@ namespace MScriptManager
 {
     public class ScriptManager
     {
-        private IEnumerable<ScriptData> data;
+        private IEnumerable<ScriptData> datas;
         private Parser parser;
         private Reader reader;
 

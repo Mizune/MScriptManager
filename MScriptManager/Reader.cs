@@ -6,7 +6,17 @@ using System.Threading.Tasks;
 
 namespace MScriptManager
 {
-    class Reader
+    public class Reader
     {
+        private List<string> Datas;
+
+
+        public Reader()
+        {
+
+        }
+
+        public 
+
     }
 }

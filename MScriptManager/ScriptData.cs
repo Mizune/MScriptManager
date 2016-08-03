@@ -32,5 +32,15 @@ namespace MScriptManager
             Option.Add(option);
         }
 
+        public void RemoveOption(string option)
+        {
+            Option.Remove(option);
+        }
+
+        public void RemoveAllOption()
+        {
+            Option.Clear();
+        }
+
     }
 }
