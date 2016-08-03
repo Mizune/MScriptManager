@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Const.cs" />
+    <Compile Include="DummyViewEngine.cs" />
     <Compile Include="ScriptData.cs" />
     <Compile Include="ScriptManager.cs" />
     <Compile Include="Parser.cs" />
