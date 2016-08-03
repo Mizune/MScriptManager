@@ -8,10 +8,36 @@ namespace MScriptManager
 {
     public class ScriptData
     {
-        private int TypeNum { get ;set; }
-        private string Line { get; set; }
+        private int typeNum;
+        private string line;
 
         private List<string> Option;
+
+        public int TypeNum
+        {
+            get
+            {
+                return typeNum;
+            }
+
+            set
+            {
+                typeNum = value;
+            }
+        }
+
+        public string Line
+        {
+            get
+            {
+                return line;
+            }
+
+            set
+            {
+                line = value;
+            }
+        }
 
         public ScriptData()
         {

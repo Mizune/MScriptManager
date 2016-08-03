@@ -16,6 +16,8 @@ namespace MScriptManager
         {                                           
             reader = new Reader();
             parser = new Parser();
+            reader.DataRead();
+            parser.
         }
 
     }
