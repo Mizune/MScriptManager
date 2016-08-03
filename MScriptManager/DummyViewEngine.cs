@@ -6,10 +6,31 @@ using System.Threading.Tasks;
 
 namespace MScriptManager
 {
-    public class DummyViewEngine
+    public static class DummyViewEngine
     {
         // This is dummy sources . Only use test program.
-        public void ChangeBGI()
+
+        public static void ChangeText()
+        {
+
+        }
+
+        public static void ChangeCharImg()
+        {
+
+        }
+
+        public static void ChangeCharThumb()
+        {
+
+        }
+
+        public static void ChangeBGM()
+        {
+
+        }
+
+        public static void ChangeBGI()
         {
             Console.WriteLine("Background image was changed.");
         }
