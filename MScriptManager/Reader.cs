@@ -15,7 +15,8 @@ namespace MScriptManager
 
         public void DataRead()
         {
-            DataRead("FirstSinarios.mst");
+            // DataRead("FirstSinarios.mst");    // only use products
+            DataRead("DummyScinarios.mst");
         }
 
 

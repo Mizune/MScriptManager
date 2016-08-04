@@ -35,6 +35,11 @@ namespace MScriptManager
             Console.WriteLine("Background image was changed.");
         }
 
+        public static void UseSE()
+        {
+            Console.WriteLine("Use SE");
+        }
+
 
     }
 }

@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Const.cs" />
+    <None Include="DummyScinarios.mst" />
     <Compile Include="DummyViewEngine.cs" />
     <Compile Include="ScriptData.cs" />
     <Compile Include="ScriptManager.cs" />
