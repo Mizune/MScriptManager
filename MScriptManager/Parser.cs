@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,11 +9,11 @@ namespace MScriptManager
 {
     class Parser
     {
-        public List<ScriptData> Datas;
+        public ArrayList Datas;
 
         public Parser()
         {
-            Datas = new List<ScriptData>();
+            Datas = new ArrayList();
         }
 
 
@@ -54,7 +55,7 @@ namespace MScriptManager
             }
         }
 
-        public List<ScriptData> GetDatas()
+        public ArrayList GetDatas()
         {
             return Datas;
         }

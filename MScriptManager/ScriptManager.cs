@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,7 +9,8 @@ namespace MScriptManager
 {
     public class ScriptManager
     {
-        private IEnumerable<ScriptData> datas;
+        private ArrayList datas;
+        private int line;
         private Parser parser;
         private Reader reader;
 
@@ -19,9 +21,10 @@ namespace MScriptManager
 
         public void Initialize()
         {
+            line = 0;
             reader = new Reader();
             parser = new Parser();
-            datas = new List<ScriptData>();
+            datas = new ArrayList();
         }
 
         public void Start()
@@ -31,10 +34,16 @@ namespace MScriptManager
             SetScinarios(parser.GetDatas());
         }
 
-        public void SetScinarios(List<ScriptData> Datas)
+        public void SetScinarios(ArrayList Datas)
         {
             this.datas = parser.GetDatas();
         }
+
+        public ScriptData GetObject()
+        {
+            return (ScriptData)datas[line];
+        }
+
 
     }
 }

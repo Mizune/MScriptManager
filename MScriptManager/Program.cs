@@ -10,6 +10,8 @@ namespace MScriptManager
     {
         static void Main(string[] args)
         {
+            ScriptManager manager = new ScriptManager();
+            manager.Start();
         }
     }
 }
