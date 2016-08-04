@@ -22,5 +22,9 @@ namespace MScriptManager
 
         public const int TYPE_CREATE_SWITCH = 40;
 
+        // Mode
+        public const int MODE_NORMAL = 100;
+        public const int MODE_SWITCH = 101;
+
     }
 }

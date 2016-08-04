@@ -40,10 +40,26 @@ namespace MScriptManager
                         case "ChangeBGI":
                             SData.TypeNum = Const.TYPE_CHANGE_BGI;
                             break;
-                        // 他のOption
-                        // TODO add more option
+                        case "ChangeCharName":
+                            break;
+                        case "ChangeBGM":
+                            break;
+                        case "ChangeCharThumbnail":
+                            break;
+                        case "CharImage":
+                            break;
+                     
                         case "UseSE":
                             SData.TypeNum = Const.TYPE_USE_SE;
+                            break;
+
+                        case "CreateFlag":
+                            break;
+                        case "ChangeFlagParams":
+                            break;
+                        case "RemoveFlag":
+                            break;
+                        case "CreateSwitch":
                             break;
                     }
 
