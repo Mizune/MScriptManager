@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,7 +12,7 @@ namespace MScriptManager
         private int typeNum;
         private string line;
 
-        private List<string> Option;
+        private ArrayList Option; // String Only
 
         public int TypeNum
         {
@@ -41,10 +42,10 @@ namespace MScriptManager
 
         public ScriptData()
         {
-            Option = new List<string>();
+            Option = new ArrayList();
         }
 
-        public ScriptData(List<string> options)
+        public ScriptData(ArrayList options)
         {
             foreach(var opt in options)
             {
