@@ -41,12 +41,16 @@ namespace MScriptManager
                             SData.TypeNum = Const.TYPE_CHANGE_BGI;
                             break;
                         case "ChangeCharName":
+                            SData.TypeNum = Const.TYPE_CHANGE_CHARNAME;
                             break;
                         case "ChangeBGM":
+                            SData.TypeNum = Const.TYPE_CHANGE_BGM;
                             break;
                         case "ChangeCharThumbnail":
+                            SData.TypeNum = Const.TYPE_CHANGE_CHARTHUMBNAIL;
                             break;
-                        case "CharImage":
+                        case "ChangeCharImage":
+                            SData.TypeNum = Const.TYPE_CHANGE_CHARIMAGE;
                             break;
                      
                         case "UseSE":
@@ -54,12 +58,16 @@ namespace MScriptManager
                             break;
 
                         case "CreateFlag":
+                            SData.TypeNum = Const.TYPE_CREATE_FLAG;
                             break;
                         case "ChangeFlagParams":
+                            SData.TypeNum = Const.TYPE_CHANGE_FLAG_PARAMS;
                             break;
                         case "RemoveFlag":
+                            SData.TypeNum = Const.TYPE_REMOVE_FLAG;
                             break;
                         case "CreateSwitch":
+                            SData.TypeNum = Const.TYPE_CREATE_SWITCH;
                             break;
                     }
 
