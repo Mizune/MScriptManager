@@ -41,7 +41,7 @@ namespace MScriptManager
 
         public ScriptData GetObject()
         {
-            return (ScriptData)datas[line];
+            return (ScriptData)datas[line++];
         }
 
 

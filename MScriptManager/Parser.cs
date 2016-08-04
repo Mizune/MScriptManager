@@ -24,7 +24,7 @@ namespace MScriptManager
                 ScriptData SData = new ScriptData();
                 if (!data.Contains("[") && !data.Contains("]"))
                 {
-                    SData.TypeNum = Const.TYPE_TEXT;
+                    SData.TypeNum = Const.TYPE_CHANGE_TEXT;
                     SData.Line = data;
                 }
                 else
@@ -40,8 +40,11 @@ namespace MScriptManager
                         case "ChangeBGI":
                             SData.TypeNum = Const.TYPE_CHANGE_BGI;
                             break;
-                            // 他のOption
-                            // TODO add more option
+                        // 他のOption
+                        // TODO add more option
+                        case "UseSE":
+                            SData.TypeNum = Const.TYPE_USE_SE;
+                            break;
                     }
 
                     for (int i = 2;i < command.Length; i++)

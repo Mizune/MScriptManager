@@ -12,7 +12,7 @@ namespace MScriptManager
 
         public static void ChangeText()
         {
-
+            Console.WriteLine("Main text was changed.");
         }
 
         public static void ChangeCharImg()

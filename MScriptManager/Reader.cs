@@ -16,7 +16,7 @@ namespace MScriptManager
         public void DataRead()
         {
             // DataRead("FirstSinarios.mst");    // only use products
-            DataRead("DummyScinarios.mst");
+            DataRead("D:\\Program Files\\OneDrive\\Documents\\MScriptManager\\MScriptManager\\DummyScinarios.mst");
         }
 
 
